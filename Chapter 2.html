@@ -1,0 +1,143 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <!-- adding the Javascript here -->
+    <script type="text/javascript">
+        // My first javascript project create a function
+        // parseInt for string to integer
+        // parseFloat to retain the decimals too.
+        // check number validity
+       /* function addnumbers() {
+
+            var firstnumber = document.getElementById("box1").value;
+            if (firstnumber == "") {
+                alert("First number is required");
+                return;
+            }
+
+            var secondnumber = document.getElementById("box2").value;
+            if (secondnumber == "") {
+                alert("Second number is required");
+                return;
+            }
+
+            var firstnumber1 = parseFloat(firstnumber);
+            var secondnumber1 = parseFloat(secondnumber);
+
+            if (isNaN(firstnumber1))
+            {
+                alert("enter valid first number");
+                return;
+            }
+
+            if (isNaN(secondnumber1))
+            {
+                alert("enter valid second number");
+                return;
+            }
+            document.getElementById("box3").value = firstnumber1 + secondnumber1;
+
+        }*/
+
+        // concatenation
+
+      /*  var string1 = "Yasin";
+        var string2 = "Mian";
+        var myValue = string1 + " " + string2;
+        alert(myValue);
+
+        var myValue = string1.concat(" ", string2);
+        alert(myValue); */
+
+        // Usin quotes in strings
+
+       /* var myValue = 'I am new to \'Javascript\'';
+        alert(myValue);
+
+        var myValue = "I am new to 'Javascript'";
+        alert(myValue); */
+
+        // upper and lower case strings and determining length
+
+        /*var myValue = "Yasin Mian";
+        alert(myValue.toUpperCase());
+        alert(myValue.toLowerCase());
+        alert(myValue.length); */
+
+        // Removing blankspaces
+
+        /*var myValue1 = "Yasin ";
+        var myValue2 = "Mian";
+        var result = myValue1.trim() + myValue2;
+        alert(result);   */
+
+        // Replace method
+        // Individual replace
+        /*var myName = "Yasin Mian";
+        alert(myName.replace("Mian", "Mohammad")); */
+
+        // Global replace - case sensitive
+        /*
+        var myValue = "Yasin mian is fourth member in Mian famliy";
+        alert(myValue);
+        alert(myValue.replace(/Mian/g, "Mohammad"));        // Mian replaced with Mohammad
+        alert(myValue.replace(/Mian/gi, "Mohammad"));       // Mian or mian or miAN replaced with Mohammad
+        */
+        // Substring and slice
+        
+        var myValue = "JavascriptTutorial";
+        /*
+        alert(myValue.substring(4,8));               // start and end position - scri
+        alert(myValue.substr(4,8));                  // start and count - scripTu        
+        alert(myValue.substring(12,2));              // Values 12 and 2 gets interchanged here, but slice will not swap
+        alert(myValue.substring(5));                 // value till end from position 5            
+        alert(myValue.substr(5));                      // value till end from position 5   
+        alert(myValue.substr(4,2));                    // result = sc
+        alert(myValue.substr(4,-1));                   // no result
+        */
+        alert(myValue.slice(3, 6));                     // 3rd to 6th position - asc
+        alert(myValue.slice(4));                        // value till end from position 4
+        
+        // get the location of the value
+        var myValue = "mdymian@gmail.com";
+        alert(myValue.indexOf("@"));                    // value = 7, if not found then -1
+        
+        
+    </script>
+
+</head>
+<body>
+    <!-- Table design and html commenting -->
+        <table style="border: 1px solid black; font family:Arial">
+            <tr>
+                <td>
+                    First number
+                </td>
+                <td>
+                    <input type="text" id="box1" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Second number
+                </td>
+                <td>
+                    <input type="text" id="box2" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Result
+                </td>
+                <td>
+                    <input type="text" id="box3" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" id="addition" value="Add" onclick="addnumbers()" />
+                </td>
+            </tr>
+        </table>
+</body>
+</html>
